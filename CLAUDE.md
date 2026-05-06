@@ -18,12 +18,14 @@ unzip files.zip -d documents/
 
 ## Documents disponibles
 
-| Fichier | Contenu |
-|--------|---------|
-| `yango_offres_produit_TOYA.md` | Offres de service TOYA : 4 classes (Éco, Confort, Confort+, Moto), grilles tarifaires en FCFA, specs véhicules |
-| `yango_croissance_marketing_TOYA.md` | Stratégie de croissance : historique expansion Yango 2018–2025, leviers marketing, acquisition utilisateurs |
-| `yango_analyse_afrique_TOYA.md` | Analyse concurrentielle : positionnement TOYA vs Yango, données marché (14% pénétration sur 28 pays africains), vulnérabilités Yango, opportunités TOYA |
-| `yango_marketing_analyse_TOYA.md` | Analyse marketing digitale : ton du site Yango Cameroun, stratégie réseaux sociaux (Facebook 45 869 abonnés, TikTok, Instagram), exemples de posts, calendrier éditorial, budget |
+
+| Fichier                              | Contenu                                                                                                                                                                          |
+| ------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `yango_offres_produit_TOYA.md`       | Offres de service TOYA : 4 classes (Éco, Confort, Confort+, Moto), grilles tarifaires en FCFA, specs véhicules                                                                   |
+| `yango_croissance_marketing_TOYA.md` | Stratégie de croissance : historique expansion Yango 2018–2025, leviers marketing, acquisition utilisateurs                                                                      |
+| `yango_analyse_afrique_TOYA.md`      | Analyse concurrentielle : positionnement TOYA vs Yango, données marché (14% pénétration sur 28 pays africains), vulnérabilités Yango, opportunités TOYA                          |
+| `yango_marketing_analyse_TOYA.md`    | Analyse marketing digitale : ton du site Yango Cameroun, stratégie réseaux sociaux (Facebook 45 869 abonnés, TikTok, Instagram), exemples de posts, calendrier éditorial, budget |
+
 
 ## Architecture de la réflexion stratégique
 
@@ -36,9 +38,12 @@ Les documents forment un ensemble cohérent à lire dans cet ordre :
 
 ## Dossiers de travail
 
-| Dossier | Usage prévu |
-|--------|-------------|
-| `data/` | Données brutes (chiffres marché, enquêtes) |
-| `pos/` | Matériaux point de vente / terrain |
-| `reseau/` | Stratégie réseau chauffeurs/partenaires |
-| `trimestre/` | Plans et bilans trimestriels |
+
+| Dossier      | Usage prévu                                |
+| ------------ | ------------------------------------------ |
+| `data/`      | Données brutes (chiffres marché, enquêtes) |
+| `pos/`       | Matériaux point de vente / terrain         |
+| `reseau/`    | Stratégie réseau chauffeurs/partenaires    |
+| `trimestre/` | Plans et bilans trimestriels               |
+
+
