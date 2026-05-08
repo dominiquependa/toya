@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(unzip -l \"/c/Users/domin/OneDrive/Bureau/yango marketing/files.zip\")",
+      "Bash(unzip -q files.zip -d temp_extract)",
+      "Read(//c/c/Users/domin/OneDrive/Bureau/yango marketing/**)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\\", \"$env:LOCALAPPDATA\", \"$env:PROGRAMFILES\", \"$env:PROGRAMFILES\\(X86\\)\", \"$env:APPDATA\" -Filter \"Cursor.exe\" -Recurse -ErrorAction SilentlyContinue | Select-Object FullName)",
+      "PowerShell(Head -40)",
+      "mcp__mcp-registry__search_mcp_registry"
+    ]
+  }
+}

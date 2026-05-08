@@ -1,0 +1,53 @@
+# --- Secrets & cles API ---
+# JAMAIS commiter ces fichiers — ils contiennent des cles privees
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets/
+credentials.json
+
+# --- Python ---
+# Si on ajoute des scripts Python (wrapper Gemini, etc.)
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# --- Node / NPM ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json.bak
+
+# --- IDE & editeurs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Cache & temp ---
+temp_extract/
+*.tmp
+*.bak
+*.log
+
+# --- Fichiers volumineux non versionnes ---
+# Si tu re-zipes les docs en archives
+files.zip
+
+# --- Outputs Claude / experimentations ---
+.claude/worktrees/
+outputs/
