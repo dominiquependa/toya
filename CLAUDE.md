@@ -37,7 +37,7 @@ Ce dépôt contient la documentation stratégique et marketing pour **TOYA**, un
 
 ## Agents disponibles (`.claude/agents/`)
 
-10 agents sont configurés dans ce projet. Ils respectent tous le format Claude Code (frontmatter `name` kebab-case, `tools` en ligne).
+13 agents sont configurés dans ce projet. Ils respectent tous le format Claude Code (frontmatter `name` kebab-case, `tools` en ligne).
 
 **Agents stratégiques (texte) :**
 - `analyse-afrique` — concurrentiel et marché Afrique
@@ -54,6 +54,11 @@ Ce dépôt contient la documentation stratégique et marketing pour **TOYA**, un
 - `veo3-reels-instagram` — Reels 9:16 jusqu'à 8s
 - `veo3-tiktok` — TikTok 9:16 viral
 - `veo3-campagne-video` — série multiplateforme Reels + TikTok
+
+**Agents équipe campagne (workflow à 3 agents) :**
+- `campagne-stratege` — Agent 1 : brief stratégique, cible, promesse, KPI, répartition des tâches
+- `campagne-creatif` — Agent 2 : idées créatives, contenus, scripts, prompts, calendrier
+- `campagne-correcteur` — Agent 3 : critique, correction, arbitrage et validation finale
 
 Chaque agent visuel / vidéo lit obligatoirement `documents/identite-marque-TOYA.md` avant de produire un prompt et applique le logo + la palette + le ton TOYA dans chaque sortie.
 
