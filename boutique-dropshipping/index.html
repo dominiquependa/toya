@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NovaDeal Express — Boutique dropshipping gratuite</title>
+    <meta
+      name="description"
+      content="Boutique dropshipping starter gratuite avec produits tendance, panier WhatsApp et plan organique pour viser 100 euros par jour."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="#top" aria-label="Accueil NovaDeal Express">
+          <span class="brand-mark">N</span>
+          <span>NovaDeal Express</span>
+        </a>
+        <div class="nav-links">
+          <a href="#produits">Produits</a>
+          <a href="#objectif">Objectif 100€/jour</a>
+          <a href="#lancement">Plan gratuit</a>
+        </div>
+        <button class="cart-button" type="button" data-open-cart>
+          Panier <span id="cart-count">0</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Boutique dropshipping gratuite à lancer sans stock</p>
+          <h1>Vends des produits pratiques qui se démontrent en 15 secondes.</h1>
+          <p class="hero-text">
+            Une boutique statique, rapide et gratuite à héberger, avec panier WhatsApp,
+            articles tendance et stratégie organique TikTok/Instagram/Pinterest.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#produits">Voir les produits</a>
+            <a class="button ghost" href="#objectif">Voir le plan 100€/jour</a>
+          </div>
+          <p class="notice">
+            Important : 100€/jour n'est jamais garanti. L'objectif dépend du trafic,
+            de la marge, du prix fournisseur, des délais de livraison et du taux de conversion.
+          </p>
+        </div>
+        <aside class="hero-card" aria-label="Modèle économique">
+          <span class="badge">Modèle conseillé</span>
+          <h2>9 ventes/jour</h2>
+          <p>avec environ 12€ de marge nette par vente = 108€/jour.</p>
+          <ul>
+            <li>Hébergement gratuit</li>
+            <li>Commande via WhatsApp</li>
+            <li>Contenu organique quotidien</li>
+            <li>Pas de stock au départ</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section" id="produits">
+        <div class="section-heading">
+          <p class="eyebrow">Catalogue recommandé</p>
+          <h2>Les meilleurs articles à tester en premier</h2>
+          <p>
+            Sélection orientée produits légers, démontrables en vidéo, avec achat impulsif
+            et marge potentielle correcte. Les prix fournisseur sont à valider avant publication.
+          </p>
+        </div>
+        <div class="filters" aria-label="Filtres produits">
+          <button class="filter active" type="button" data-filter="all">Tous</button>
+          <button class="filter" type="button" data-filter="Animaux">Animaux</button>
+          <button class="filter" type="button" data-filter="Maison">Maison</button>
+          <button class="filter" type="button" data-filter="Voiture">Voiture</button>
+          <button class="filter" type="button" data-filter="Voyage">Voyage</button>
+        </div>
+        <div class="product-grid" id="product-grid"></div>
+      </section>
+
+      <section class="section split" id="objectif">
+        <div>
+          <p class="eyebrow">Objectif financier</p>
+          <h2>Comment viser 100€ par jour sans publicité payante</h2>
+          <p>
+            Le chemin le plus réaliste est de vendre peu de produits, mais avec une marge
+            claire et beaucoup de contenu organique.
+          </p>
+          <div class="math-grid">
+            <div>
+              <strong>12€</strong>
+              <span>marge nette cible par commande</span>
+            </div>
+            <div>
+              <strong>9</strong>
+              <span>commandes par jour</span>
+            </div>
+            <div>
+              <strong>1000</strong>
+              <span>visites/jour à 0,9% conversion</span>
+            </div>
+          </div>
+        </div>
+        <div class="plan-card">
+          <h3>Routine quotidienne gratuite</h3>
+          <ol>
+            <li>Publier 3 vidéos courtes par jour : problème, démo, preuve.</li>
+            <li>Poster chaque vidéo sur TikTok, Instagram Reels, YouTube Shorts et Pinterest.</li>
+            <li>Répondre aux commentaires avec une vidéo.</li>
+            <li>Mettre le lien boutique dans bio + message WhatsApp.</li>
+            <li>Couper les produits sans clics après 7 jours.</li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="lancement">
+        <div class="section-heading">
+          <p class="eyebrow">Plan de lancement 0€</p>
+          <h2>Les étapes pour lancer gratuitement</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>Choisir 3 produits test</h3>
+            <p>Démarrer avec animaux + voiture + maison, pas tout le catalogue.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Valider fournisseur</h3>
+            <p>Vérifier prix, délais, retours, photos, conformité et disponibilité.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Héberger gratuitement</h3>
+            <p>Mettre cette boutique sur GitHub Pages, Netlify ou Vercel.</p>
+          </article>
+          <article>
+            <span>4</span>
+            <h3>Vendre par WhatsApp</h3>
+            <p>Encaisser manuellement au début pour éviter les frais mensuels Shopify.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-panel" id="cart-panel" aria-hidden="true">
+      <div class="cart-panel-inner">
+        <div class="cart-header">
+          <h2>Ton panier</h2>
+          <button type="button" class="icon-button" data-close-cart aria-label="Fermer le panier">×</button>
+        </div>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-footer">
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">0€</strong>
+          </div>
+          <a class="button primary full" id="whatsapp-order" href="#" target="_blank" rel="noreferrer">
+            Commander sur WhatsApp
+          </a>
+          <p class="small">
+            Remplace le numéro WhatsApp dans <code>script.js</code> avant la mise en ligne.
+          </p>
+        </div>
+      </div>
+    </aside>
+    <div class="overlay" id="overlay" data-close-cart></div>
+
+    <footer class="footer">
+      <p>
+        NovaDeal Express est un modèle starter. Vérifie toujours conformité, fournisseurs,
+        délais de livraison, SAV, mentions légales et taxes avant de vendre.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
