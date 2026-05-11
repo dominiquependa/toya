@@ -1,4 +1,4 @@
-# Boutique dropshipping gratuite — NovaDeal Express
+# Boutique dropshipping gratuite — MiloStore
 
 Cette boutique est un starter kit statique pour lancer une boutique dropshipping sans abonnement mensuel.
 

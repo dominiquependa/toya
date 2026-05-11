@@ -136,7 +136,7 @@ const products = [
 ];
 
 let activeFilter = "all";
-let cart = JSON.parse(localStorage.getItem("novadeal-cart") || "{}");
+let cart = JSON.parse(localStorage.getItem("milostore-cart") || "{}");
 
 const productGrid = document.querySelector("#product-grid");
 const cartPanel = document.querySelector("#cart-panel");
@@ -151,7 +151,7 @@ function formatPrice(value) {
 }
 
 function saveCart() {
-  localStorage.setItem("novadeal-cart", JSON.stringify(cart));
+  localStorage.setItem("milostore-cart", JSON.stringify(cart));
 }
 
 function getCartEntries() {
