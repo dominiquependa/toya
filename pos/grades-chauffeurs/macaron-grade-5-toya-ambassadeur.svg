@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="850" viewBox="0 0 1200 850" role="img" aria-label="Macaron pare-brise TOYA Ambassadeur cinq etoiles">
+  <rect width="1200" height="850" rx="54" fill="#190334"/>
+  <rect x="36" y="36" width="1128" height="778" rx="42" fill="none" stroke="#E0D4EE" stroke-width="8"/>
+  <rect x="62" y="62" width="1076" height="120" rx="28" fill="#F6F5FB"/>
+  <image href="../../assets/logo-toya.jpg" x="78" y="76" width="170" height="95" preserveAspectRatio="xMidYMid meet"/>
+  <text x="282" y="115" fill="#190334" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700" letter-spacing="4">MACARON OFFICIEL CHAUFFEUR</text>
+  <text x="282" y="158" fill="#644090" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="6">TOYA FAMILLE</text>
+  <text x="600" y="302" text-anchor="middle" fill="#F6F5FB" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="76" font-weight="900" letter-spacing="2">TOYA AMBASSADEUR</text>
+  <text x="600" y="405" text-anchor="middle" fill="#E0D4EE" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="96" font-weight="900">&#9733;&#9733;&#9733;&#9733;&#9733;</text>
+  <text x="600" y="466" text-anchor="middle" fill="#F6F5FB" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" letter-spacing="5">GRADE 5 / 5</text>
+  <rect x="82" y="540" width="700" height="190" rx="28" fill="#F6F5FB"/>
+  <text x="122" y="602" fill="#190334" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">ID chauffeur : TYA-DRV-0000</text>
+  <text x="122" y="658" fill="#190334" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Plaque : LT-000-AA</text>
+  <text x="122" y="714" fill="#644090" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">Valide jusqu'au : JJ/MM/AAAA</text>
+  <rect x="835" y="540" width="250" height="190" rx="28" fill="#F6F5FB"/>
+  <rect x="878" y="565" width="164" height="122" fill="#190334"/>
+  <rect x="898" y="585" width="34" height="34" fill="#F6F5FB"/>
+  <rect x="988" y="585" width="34" height="34" fill="#F6F5FB"/>
+  <rect x="898" y="633" width="34" height="34" fill="#F6F5FB"/>
+  <rect x="950" y="625" width="24" height="24" fill="#F6F5FB"/>
+  <text x="960" y="716" text-anchor="middle" fill="#190334" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700">QR VERIFICATION</text>
+  <text x="600" y="788" text-anchor="middle" fill="#E0D4EE" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" letter-spacing="3">LE CONTINENT EN MOUVEMENT</text>
+</svg>
