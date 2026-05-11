@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER = "33700000000"; // Remplacer par ton numero au format international, sans +.
+const WHATSAPP_NUMBER = "237657901106"; // Numero WhatsApp au format international, sans +.
 
 const products = [
   {
