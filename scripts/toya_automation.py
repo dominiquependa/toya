@@ -19,8 +19,17 @@ BOARD_ID=jHdTBDKu
 
 import requests
 import smtplib
+import sys
 import time
 import os
+
+# Windows terminal (cp1252) : évite UnicodeEncodeError sur les emojis
+if hasattr(sys.stdout, "reconfigure"):
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from datetime import datetime
@@ -41,15 +50,28 @@ BOARD_ID = os.getenv("BOARD_ID", "jHdTBDKu")
 cartes_traitees = set()
 
 
+def _trello_get(url, params=None):
+    """GET Trello avec message d'erreur lisible."""
+    p = {"key": TRELLO_API_KEY, "token": TRELLO_TOKEN}
+    if params:
+        p.update(params)
+    response = requests.get(url, params=p, timeout=30)
+    if not response.ok:
+        print(f"❌ Trello HTTP {response.status_code}: {response.text[:300]}")
+        return None
+    try:
+        return response.json()
+    except requests.exceptions.JSONDecodeError:
+        print(f"❌ Réponse Trello invalide: {response.text[:300]}")
+        return None
+
+
 def get_liste_id(nom_liste):
     """Récupère l'ID d'une liste par son nom"""
     url = f"https://api.trello.com/1/boards/{BOARD_ID}/lists"
-    params = {
-        "key": TRELLO_API_KEY,
-        "token": TRELLO_TOKEN
-    }
-    response = requests.get(url, params=params)
-    listes = response.json()
+    listes = _trello_get(url)
+    if not listes:
+        return None, None
     
     for liste in listes:
         if nom_liste.lower() in liste["name"].lower():
@@ -60,12 +82,8 @@ def get_liste_id(nom_liste):
 def get_cartes_liste(liste_id):
     """Récupère toutes les cartes d'une liste"""
     url = f"https://api.trello.com/1/lists/{liste_id}/cards"
-    params = {
-        "key": TRELLO_API_KEY,
-        "token": TRELLO_TOKEN
-    }
-    response = requests.get(url, params=params)
-    return response.json()
+    cartes = _trello_get(url)
+    return cartes if cartes else []
 
 
 def envoyer_email_alice(carte_nom, carte_url, carte_desc):
@@ -139,7 +157,17 @@ def envoyer_email_alice(carte_nom, carte_url, carte_desc):
 
 def surveiller_trello():
     """Boucle principale — surveille Trello toutes les 2 minutes"""
-    
+    missing = [n for n, v in [
+        ("TRELLO_API_KEY", TRELLO_API_KEY),
+        ("TRELLO_TOKEN", TRELLO_TOKEN),
+        ("GMAIL_USER", GMAIL_USER),
+        ("GMAIL_PASSWORD", GMAIL_PASSWORD),
+        ("ALICE_EMAIL", ALICE_EMAIL),
+    ] if not v]
+    if missing:
+        print(f"❌ Variables manquantes dans .env : {', '.join(missing)}")
+        return
+
     print("🚗 TOYA Automation démarré...")
     print(f"📧 Surveillance active — Envoi vers : {ALICE_EMAIL}")
     print("=" * 50)
