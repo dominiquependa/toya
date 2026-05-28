@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="TOYA">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5A3"/>
+      <stop offset="50%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#9A7B2E"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#0D0D0D"/>
+  <rect x="1" y="1" width="62" height="62" rx="13" fill="none" stroke="url(#g)" stroke-width="1.5"/>
+  <path d="M18 16h28v7H33v25h-8V23H18z" fill="url(#g)"/>
+  <path d="M38 40c5 3 8 5 14 7" stroke="url(#g)" stroke-width="2" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 88" role="img" aria-label="TOYA VTC Premium">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8D5A3"/>
+      <stop offset="45%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#9A7B2E"/>
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#7A6328"/>
+    </linearGradient>
+  </defs>
+  <!-- Emblem -->
+  <circle cx="44" cy="44" r="40" fill="#0D0D0D" stroke="url(#goldRing)" stroke-width="2"/>
+  <path d="M28 24h32v8H48v32h-8V32H28z" fill="url(#gold)"/>
+  <path d="M52 52c6 4 10 6 16 8" stroke="url(#gold)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <circle cx="68" cy="60" r="3" fill="#C9A84C"/>
+  <!-- Wordmark -->
+  <text x="96" y="42" font-family="Poppins, Arial, sans-serif" font-size="36" font-weight="800" fill="url(#gold)" letter-spacing="8">TOYA</text>
+  <text x="98" y="62" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#8A8A8A" letter-spacing="4">VTC PREMIUM</text>
+  <text x="98" y="78" font-family="Inter, Arial, sans-serif" font-size="9" fill="#555" letter-spacing="1">DOUALA · CAMEROUN</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" aria-hidden="true">
+  <defs>
+    <linearGradient id="carGold" x1="0" x2="1">
+      <stop offset="0%" stop-color="#C9A84C"/>
+      <stop offset="100%" stop-color="#7A6328"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="120" fill="none"/>
+  <path d="M40 75h320l-25-35H85L65 75z" fill="#1A1A1A" stroke="#C9A84C" stroke-width="1.5"/>
+  <path d="M95 40h180l20 35H75z" fill="#141414" stroke="rgba(201,168,76,0.4)"/>
+  <rect x="110" y="48" width="50" height="22" rx="3" fill="rgba(201,168,76,0.15)" stroke="#C9A84C"/>
+  <rect x="240" y="48" width="50" height="22" rx="3" fill="rgba(201,168,76,0.15)" stroke="#C9A84C"/>
+  <circle cx="120" cy="78" r="18" fill="#0D0D0D" stroke="url(#carGold)" stroke-width="3"/>
+  <circle cx="120" cy="78" r="8" fill="#C9A84C"/>
+  <circle cx="300" cy="78" r="18" fill="#0D0D0D" stroke="url(#carGold)" stroke-width="3"/>
+  <circle cx="300" cy="78" r="8" fill="#C9A84C"/>
+  <rect x="155" y="55" width="90" height="8" rx="2" fill="#C9A84C" opacity="0.6"/>
+</svg>
